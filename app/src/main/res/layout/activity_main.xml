@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:weightSum="5"
+    tools:context="com.example.usuario.proyectofinal_studyjam.MainActivity">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:orientation="horizontal"
+        android:layout_weight="1"
+        android:background="@color/colorPrimaryDark">
+        <HorizontalScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <GridLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:columnCount="4"
+                android:rowCount="1"
+                android:nestedScrollingEnabled="true"
+                android:orientation="horizontal">
+                <Button
+                    android:text="Reno"
+                    android:textAllCaps="false"
+                    android:layout_gravity="fill"
+                    android:layout_columnWeight="1"
+                    android:onClick="fadein"/>
+                <Button
+                    android:text="Santa"
+                    android:textAllCaps="false"
+                    android:layout_gravity="fill"
+                    android:layout_columnWeight="1"
+                    android:onClick="santa"/>
+                <Button
+                    android:text="santa Rockero"
+                    android:textAllCaps="false"
+                    android:layout_gravity="fill"
+                    android:layout_columnWeight="1"
+                    android:onClick="santarock"/>
+                <Button
+                    android:text="santa Músico"
+                    android:textAllCaps="false"
+                    android:layout_gravity="fill"
+                    android:layout_columnWeight="1"
+                    android:onClick="santanegro"/>
+
+            </GridLayout>
+        </HorizontalScrollView>
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:layout_weight="4"
+        android:background="@color/colorAccent">
+        <ImageView
+            android:id="@+id/Reno"
+            android:layout_width="300dp"
+            android:layout_height="400dp"
+            android:src="@drawable/reno"
+            android:layout_centerInParent="true"
+            android:visibility="invisible"/>
+        <ImageView
+            android:id="@+id/santaRoc"
+            android:layout_width="300dp"
+            android:layout_height="400dp"
+            android:src="@drawable/santarockero"
+            android:layout_centerInParent="true"
+            android:visibility="invisible"/>
+        <ImageView
+            android:id="@+id/santaSanta"
+            android:layout_width="300dp"
+            android:layout_height="400dp"
+            android:src="@drawable/santasanta"
+            android:layout_centerInParent="true"
+            android:visibility="invisible"
+            />
+        <ImageView
+            android:id="@+id/santamusico"
+            android:layout_width="300dp"
+            android:layout_height="400dp"
+            android:src="@drawable/santasanta"
+            android:layout_centerInParent="true"
+            android:visibility="invisible"
+            />
+        <ImageView
+            android:id="@+id/santanegro"
+            android:layout_width="150dp"
+            android:layout_height="250dp"
+            android:src="@drawable/santamusico"
+            android:layout_centerInParent="true"
+            android:visibility="invisible"
+
+            />
+
+    </RelativeLayout>
+
+</LinearLayout>
